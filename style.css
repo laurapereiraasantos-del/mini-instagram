@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: Arial, sans-serif;
+    color: #222;
+    padding-bottom: 80px;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    height: 60px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20px;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+.top-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.top-buttons button {
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+/* STORIES */
+
+.stories {
+    background-color: white;
+
+    display: flex;
+    gap: 18px;
+
+    padding: 15px;
+
+    overflow-x: auto;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.story {
+    min-width: 70px;
+    text-align: center;
+}
+
+.story img {
+    width: 65px;
+    height: 65px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 3px solid #e1306c;
+}
+
+.story p {
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+
+/* FEED */
+
+main {
+    max-width: 600px;
+    margin: auto;
+}
+
+
+/* POST */
+
+.post {
+    background-color: white;
+
+    margin-top: 20px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+}
+
+
+/* CABEÇALHO DO POST */
+
+.post-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px;
+}
+
+.post-header img {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.post-header strong {
+    flex: 1;
+}
+
+.follow {
+    background-color: #0095f6;
+
+    color: white;
+
+    border: none;
+
+    padding: 7px 12px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* IMAGEM */
+
+.post-image {
+    width: 100%;
+
+    display: block;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+}
+
+
+/* BOTÕES */
+
+.actions {
+    display: flex;
+
+    gap: 15px;
+
+    padding: 10px;
+}
+
+.actions button {
+    background: none;
+
+    border: none;
+
+    font-size: 27px;
+
+    cursor: pointer;
+}
+
+
+/* CURTIDAS */
+
+.likes {
+    padding: 0 12px;
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+
+/* LEGENDA */
+
+.caption {
+    padding: 10px 12px;
+
+    font-size: 14px;
+}
+
+.caption strong {
+    margin-right: 5px;
+}
+
+
+/* COMENTÁRIOS */
+
+.comments {
+    padding: 0 12px;
+}
+
+.comments p {
+    margin-bottom: 7px;
+
+    font-size: 14px;
+}
+
+
+/* COMENTÁRIO */
+
+.comment-box {
+    display: flex;
+
+    border-top: 1px solid #eee;
+
+    padding: 10px;
+}
+
+.comment-box input {
+    flex: 1;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+.comment-box button {
+    background: none;
+
+    border: none;
+
+    color: #0095f6;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* MENU INFERIOR */
+
+nav {
+    position: fixed;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 60px;
+
+    background-color: white;
+
+    border-top: 1px solid #ddd;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+    z-index: 20;
+}
+
+nav button {
+    background: none;
+
+    border: none;
+
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .post {
+        border-left: none;
+        border-right: none;
+
+        border-radius: 0;
+    }
+
+}
