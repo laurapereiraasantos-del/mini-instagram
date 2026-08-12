@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mini Instagram</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Mini Instagram</h1>
+
+        <div class="top-buttons">
+
+            <button>♡</button>
+
+            <button>✉</button>
+
+        </div>
+
+    </header>
+
+
+    <!-- STORIES -->
+
+    <section class="stories">
+
+        <div class="story">
+
+            <img src="https://i.pravatar.cc/100?img=1">
+
+            <p>Você</p>
+
+        </div>
+
+
+        <div class="story">
+
+            <img src="https://i.pravatar.cc/100?img=2">
+
+            <p>Ana</p>
+
+        </div>
+
+
+        <div class="story">
+
+            <img src="https://i.pravatar.cc/100?img=3">
+
+            <p>João</p>
+
+        </div>
+
+
+        <div class="story">
+
+            <img src="https://i.pravatar.cc/100?img=4">
+
+            <p>Maria</p>
+
+        </div>
+
+
+        <div class="story">
+
+            <img src="https://i.pravatar.cc/100?img=5">
+
+            <p>Pedro</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEED -->
+
+    <main>
+
+        <article class="post">
+
+
+            <!-- USUÁRIO -->
+
+            <div class="post-header">
+
+                <img src="https://i.pravatar.cc/100?img=2">
+
+                <strong>@ana</strong>
+
+                <button class="follow">
+
+                    Seguir
+
+                </button>
+
+            </div>
+
+
+            <!-- FOTO -->
+
+            <img
+                class="post-image"
+                src="https://picsum.photos/600/600"
+            >
+
+
+            <!-- BOTÕES -->
+
+            <div class="actions">
+
+                <button
+                    onclick="curtir(this)"
+                    class="like-button">
+
+                    ♡
+
+                </button>
+
+
+                <button>
+
+                    💬
+
+                </button>
+
+
+                <button>
+
+                    ↗
+
+                </button>
+
+            </div>
+
+
+            <!-- CURTIDAS -->
+
+            <p class="likes">
+
+                <span>0</span> curtidas
+
+            </p>
+
+
+            <!-- LEGENDA -->
+
+            <p class="caption">
+
+                <strong>@ana</strong>
+
+                Meu primeiro post! 📸
+
+            </p>
+
+
+            <!-- COMENTÁRIOS -->
+
+            <div class="comments">
+
+                <p>
+
+                    <strong>@joao</strong>
+
+                    Ficou muito bom!
+
+                </p>
+
+            </div>
+
+
+            <!-- CAMPO DE COMENTÁRIO -->
+
+            <div class="comment-box">
+
+                <input
+                    type="text"
+                    placeholder="Adicione um comentário..."
+                >
+
+                <button onclick="adicionarComentario(this)">
+
+                    Publicar
+
+                </button>
+
+            </div>
+
+
+        </article>
+
+    </main>
+
+
+    <!-- MENU INFERIOR -->
+
+    <nav>
+
+        <button>⌂</button>
+
+        <button>⌕</button>
+
+        <button>＋</button>
+
+        <button>♡</button>
+
+        <button>👤</button>
+
+    </nav>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
