@@ -1,0 +1,14 @@
+{
+  "name": "mini-instagram",
+  "version": "1.0.0",
+  "description": "Meu primeiro aplicativo de rede social",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "bcrypt": "^6.0.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
